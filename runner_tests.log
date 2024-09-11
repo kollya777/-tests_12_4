@@ -1,0 +1,14 @@
+2024-09-11 09:03:52,547 | WARNING | Неверный тип данных для объекта Runner.
+Traceback (most recent call last):
+  File "D:\Urban University\new_proekt\tests_12_4.py", line 79, in test_run
+    chandler = Runner(10)
+  File "D:\Urban University\new_proekt\tests_12_4.py", line 10, in __init__
+    raise TypeError(f'Имя может быть только числом, передано {type(name).__name__}')
+TypeError: Имя может быть только числом, передано int
+2024-09-11 09:03:52,552 | WARNING | Неверная скорость для Runner.
+Traceback (most recent call last):
+  File "D:\Urban University\new_proekt\tests_12_4.py", line 72, in test_walk
+    joe = Runner('Joe', speed = -5)
+  File "D:\Urban University\new_proekt\tests_12_4.py", line 15, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
